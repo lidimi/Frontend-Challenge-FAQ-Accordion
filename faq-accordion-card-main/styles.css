@@ -15,18 +15,45 @@ body {
 
 .container {
     width: 60%;
+    min-width: 900px;
+    height: 60vh;
     margin: 20vh auto;
     background-color: white;
     border-radius: 15px;
     display: flex;
+    position: relative;
+    -webkit-box-shadow: 1px 17px 29px -5px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 17px 29px -5px rgba(66, 68, 90, 1);
+    box-shadow: 1px 17px 29px -5px rgba(66, 68, 90, 1);
 }
 
 .images {
     width: 50%;
     background-image: url(images/bg-pattern-desktop.svg);
+    background-position: 145% 65%;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
+
+.box {
+    margin-left: -93px;
+    margin-top: 100px;
+    z-index: 2;
+    position: absolute;
+    left: -0.1rem;
+    top: 8rem;
+}
+
+.images .woman {
+    position: absolute;
+    left: -4rem;
+    top: 6rem;
+
+}
+
 
 main {
     width: 50%;
@@ -36,4 +63,34 @@ main {
 h1 {
     margin-bottom: 2rem;
     color: hsl(238, 29%, 16%);
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: 400;
+    color: hsl(237, 12%, 33%);
+    margin: 1em 0;
+}
+
+p {
+    color: hsl(240, 6%, 50%);
+    font-size: 15px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.QA {
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

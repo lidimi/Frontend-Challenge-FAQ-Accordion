@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 60%;
+    width: 55%;
     min-width: 900px;
     height: 60vh;
     margin: 20vh auto;
@@ -45,7 +45,9 @@ body {
     position: absolute;
     left: -0.1rem;
     top: 8rem;
+
 }
+
 
 .images .woman {
     position: absolute;
@@ -83,6 +85,7 @@ button {
     border: none;
     background-color: white;
     cursor: pointer;
+    padding: 1rem;
 }
 
 .QA {
@@ -93,4 +96,43 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+h2:hover {
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+.box:hover {
+    animation: boxUp 1s linear;
+}
+
+@keyframes moveBox {
+
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: -25px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+
+@keyframes boxUp {
+    0% {
+        bottom: 0px;
+    }
+
+    50% {
+        top: 100px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
 }

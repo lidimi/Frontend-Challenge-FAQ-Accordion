@@ -19,7 +19,7 @@ body {
 .container {
     width: 55%;
     min-width: 900px;
-    height: 55vh;
+    min-height: 55vh;
     margin: 20vh auto;
     background-color: white;
     border-radius: 15px;
@@ -136,7 +136,7 @@ h2:hover {
     }
 
     .container {
-        margin: 20vh auto;
+        margin: 25vh auto;
         width: 95%;
         min-width: 300px;
         height: auto;

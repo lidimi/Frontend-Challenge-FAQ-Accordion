@@ -11,12 +11,15 @@ body {
     height: 100vh;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     width: 55%;
     min-width: 900px;
-    height: 60vh;
+    height: 55vh;
     margin: 20vh auto;
     background-color: white;
     border-radius: 15px;
@@ -30,7 +33,7 @@ body {
 .images {
     width: 50%;
     background-image: url(images/bg-pattern-desktop.svg);
-    background-position: 145% 65%;
+    background-position: 130% 70%;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -103,8 +106,12 @@ h2:hover {
     cursor: pointer;
 }
 
-.box:hover {
-    animation: boxUp 1s linear;
+.woman-mobile {
+    display: none;
+}
+
+.background-mobile {
+    display: none;
 }
 
 @keyframes moveBox {
@@ -122,17 +129,62 @@ h2:hover {
     }
 }
 
+@media (max-width: 900px) {
 
-@keyframes boxUp {
-    0% {
-        bottom: 0px;
+    body {
+        height: auto;
     }
 
-    50% {
-        top: 100px;
+    .container {
+        margin: 20vh auto;
+        width: 95%;
+        min-width: 300px;
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 4rem;
+        position: static;
     }
 
-    100% {
-        bottom: 0px;
+    .images {
+        width: 100%;
+        margin-bottom: 10rem;
+        overflow: visible;
+        position: relative;
+        justify-content: center;
+    }
+
+    .background-mobile {
+        display: block;
+    }
+
+    .woman {
+        display: none;
+    }
+
+    .woman-mobile {
+        display: block;
+        position: absolute;
+        bottom: -6.6rem;
+        max-width: 350px;
+        max-height: 250px;
+
+    }
+
+    .box {
+        display: none;
+    }
+
+    .box-container {
+        display: none;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    main {
+        width: 100%;
+        padding: 2rem;
     }
 }

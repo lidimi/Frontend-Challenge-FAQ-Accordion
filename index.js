@@ -32,7 +32,7 @@ buttons.forEach(button => {
     button.addEventListener('mouseover', () => {
         box.style.animation = 'none';
         setTimeout(function () {
-            box.style.animation = 'moveBox 1s linear'
+            box.style.animation = 'moveBox 0.6s ease-out'
         }, 0);
     })
 });

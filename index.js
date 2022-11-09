@@ -29,7 +29,7 @@ for (let i = 0; i < buttons.length; i++) {
 };
 
 buttons.forEach(button => {
-    button.addEventListener('mouseover', () => {
+    button.addEventListener('click', () => {
         box.style.animation = 'none';
         setTimeout(function () {
             box.style.animation = 'moveBox 0.6s ease-out'
